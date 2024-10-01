@@ -1,15 +1,21 @@
+/* Stile per le card */
 .carousel-card .card {
     height: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
     overflow: hidden;
     transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assicura che il contenuto si distribuisca verticalmente */
 }
 
-.carousel-card .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Altezza uniforme per tutte le card */
+.carousel-card .carousel-item .card {
+    min-height: 100%; /* Imposta un'altezza minima uniforme */
 }
 
+/* La sezione immagine ha un'altezza fissa */
 .carousel-card .card img {
     height: 200px;
     object-fit: cover;
@@ -17,14 +23,50 @@
     border-top-right-radius: 12px;
 }
 
-.carousel-card .carousel-item {
-    padding: 10px;
+/* Distribuzione del contenuto della card */
+.carousel-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Titolo, sottotitolo, descrizione e pulsante distribuiti uniformemente */
+    flex-grow: 1;
 }
 
-.recent-title {
-    color: var(--primary-color); /* Colore per 'Recent' */
+.carousel-card .card-body .card-title, 
+.carousel-card .card-body .card-subtitle, 
+.carousel-card .card-body .card-text {
+    margin-bottom: 10px; /* Spazio tra gli elementi interni */
 }
 
-.projects-title {
-    color: var(--secondary-color); /* Colore per 'Projects' */
+
+.carousel-indicators .active {
+    background-color: var(--secondary-color); /* Colore per l'indicatore attivo */
+   
+
+}
+.carousel-indicators {
+    
+    bottom: -55px; /* Cambia il valore se vuoi che sia più o meno distante nella versione mobile */
+}
+
+.recent-title{
+    color: var(--primary-color); /* Colore per l'indicatore attivo */
+}
+
+.projects-title{
+    color: var(--secondary-color); /* Colore per l'indicatore attivo */
+}
+
+/* Media query per schermi piccoli (mobile) */
+@media (max-width: 768px) {
+    .carousel-card .carousel-item .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: center;
+    }
+
+    .carousel-card .carousel-item .col-md-4 {
+        flex: 0 0 100%; /* Ogni card occupa il 100% della larghezza */
+        max-width: 100%;
+    }
 }

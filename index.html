@@ -15,6 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="css/navbar.css" />
@@ -26,6 +29,8 @@
 <link rel="stylesheet" href="css/aboutme.css" />
 <!-- Section Carousel-->
 <link rel="stylesheet" href="css/carousel.css" />
+<!-- Section Footer-->
+<link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -172,105 +177,256 @@
     </div>
 
 
-    <section class="container my-5 carousel-card">
-      <h2 class="about-title text-center mb-4">
-        <span class="recent-title">Recent</span> 
-        <span class="projects-title">Projects</span>
-    </h2>
-      <div id="cardCarousel" class="carousel slide" >
-          <div class="carousel-indicators">
-              <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 1">
-                              <div class="card-body">
-                                  <h5 class="card-title">Titolo 1</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 1</h6>
-                                  <p class="card-text">Questa è una descrizione della prima card.</p>
-                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 2">
-                              <div class="card-body">
-                                  <h5 class="card-title">Titolo 2</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 2</h6>
-                                  <p class="card-text">Questa è una descrizione della seconda card.</p>
-                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 3">
-                              <div class="card-body">
-                                  <h5 class="card-title">Titolo 3</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 3</h6>
-                                  <p class="card-text">Questa è una descrizione della terza card.</p>
-                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- Second slide -->
-              <div class="carousel-item">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 4">
-                              <div class="card-body">
-                                  <h5 class="card-title">Titolo 4</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 4</h6>
-                                  <p class="card-text">Questa è una descrizione della quarta card.</p>
-                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 5">
-                              <div class="card-body">
-                                  <h5 class="card-title">Titolo 5</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 5</h6>
-                                  <p class="card-text">Questa è una descrizione della quinta card.</p>
-                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 6">
-                              <div class="card-body">
-                                  <h5 class="card-title">Titolo 6</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 6</h6>
-                                  <p class="card-text">Questa è una descrizione della sesta card.</p>
-                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Carousel controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
+    <!-- Carousel per desktop (2 slide con 3 card per slide) -->
+<section class="container my-5 carousel-card d-none d-md-block">
+  <h2 class="about-title text-center mb-4">
+      <span class="recent-title">Recent</span>
+      <span class="projects-title">Projects</span>
+  </h2>
+  <div id="cardCarouselDesktop" class="carousel slide carousel-dark" >
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#cardCarouselDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#cardCarouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-  </section>
+      <div class="carousel-inner">
+          <!-- Prima slide (3 card) -->
+          <div class="carousel-item active">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 1">
+                          <div class="card-body">
+                              <h5 class="card-title">Titolo 1</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 1</h6>
+                              <p class="card-text">Questa è una descrizione della prima card.</p>
+                              <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 2">
+                          <div class="card-body">
+                              <h5 class="card-title">Titolo 2</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 2</h6>
+                              <p class="card-text">Questa è una descrizione della seconda card.</p>
+                              <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 3">
+                          <div class="card-body">
+                              <h5 class="card-title">Titolo 3</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 3</h6>
+                              <p class="card-text">Questa è una descrizione della terza card.</p>
+                              <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Seconda slide (3 card) -->
+          <div class="carousel-item">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 4">
+                          <div class="card-body">
+                              <h5 class="card-title">Titolo 4</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 4</h6>
+                              <p class="card-text">Questa è una descrizione della quarta card.</p>
+                              <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 5">
+                          <div class="card-body">
+                              <h5 class="card-title">Titolo 5</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 5</h6>
+                              <p class="card-text">Questa è una descrizione della quinta card.</p>
+                              <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 6">
+                          <div class="card-body">
+                              <h5 class="card-title">Titolo 6</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 6</h6>
+                              <p class="card-text">Questa è una descrizione della sesta card.</p>
+                              <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#cardCarouselDesktop" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cardCarouselDesktop" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</section>
+
+<!-- Carousel per mobile (6 slide con una card per slide) -->
+<section class="container my-5 carousel-card d-md-none">
+  <h2 class="about-title text-center mb-4">
+      <span class="recent-title">Recent</span>
+      <span class="projects-title">Projects</span>
+  </h2>
+  <div id="cardCarouselMobile" class="carousel slide carousel-dark" >
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#cardCarouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#cardCarouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#cardCarouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#cardCarouselMobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#cardCarouselMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#cardCarouselMobile" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+          <!-- Prima slide (1 card) -->
+          <div class="carousel-item active">
+              <div class="col-12">
+                  <div class="card">
+                      <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 1">
+                      <div class="card-body">
+                          <h5 class="card-title">Titolo 1</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 1</h6>
+                          <p class="card-text">Questa è una descrizione della prima card.</p>
+                          <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Seconda slide (1 card) -->
+          <div class="carousel-item">
+              <div class="col-12">
+                  <div class="card">
+                      <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 2">
+                      <div class="card-body">
+                          <h5 class="card-title">Titolo 2</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 2</h6>
+                          <p class="card-text">Questa è una descrizione della seconda card.</p>
+                          <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Terza slide (1 card) -->
+          <div class="carousel-item">
+              <div class="col-12">
+                  <div class="card">
+                      <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 3">
+                      <div class="card-body">
+                          <h5 class="card-title">Titolo 3</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 3</h6>
+                          <p class="card-text">Questa è una descrizione della terza card.</p>
+                          <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Altre slide simili per 4, 5, 6 -->
+          <div class="carousel-item">
+            <div class="col-12">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Titolo 4</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 4</h6>
+                        <p class="card-text">Questa è una descrizione della terza card.</p>
+                        <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-12">
+              <div class="card">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Titolo 5</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 5</h6>
+                      <p class="card-text">Questa è una descrizione della terza card.</p>
+                      <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="col-12">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 3">
+                <div class="card-body">
+                    <h5 class="card-title">Titolo 6</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 6</h6>
+                    <p class="card-text">Questa è una descrizione della terza card.</p>
+                    <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#cardCarouselMobile" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cardCarouselMobile" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</section>
+
+
+<!--Footer-->
+<footer class="about-footer py-5">
+  <div class="container text-center">
+    <!-- Claim -->
+    <h1 class="about-claim">Like My Work & Want To See More?</h1>
+    <h1 class="about-claim">Follow Me On Socials!</h1>
+
     
+    <!-- Social Icons -->
+    <div class="about-social-icons my-4">
+      <a href="https://linkedin.com" target="_blank" class="about-social-link mx-2">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="about-social-link mx-2">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    
+    <!-- Divider -->
+    <hr class="about-divider my-4">
+    
+    <!-- Footer Bottom Row -->
+    <div class="row">
+      <div class="col-12 col-md-4 text-start">
+        <p class="about-footer-text">Portfolio.</p>
+      </div>
+      <div class="col-12 col-md-4 text-center mt-3 mt-md-0">
+        <a href="#" class="about-nav-link mx-2">Home</a>
+        <a href="#" class="about-nav-link mx-2">Servizi</a>
+        <a href="#" class="about-nav-link mx-2">Chi Siamo</a>
+      </div>
+      <div class="col-12 col-md-4 text-end mt-3 mt-md-0">
+        <a href="#" class="about-contact-link">Contact me</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
     
 
     <!-- Bootstrap JS -->
