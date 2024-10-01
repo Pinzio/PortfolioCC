@@ -1,0 +1,30 @@
+.carousel-card .card {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.carousel-card .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-card .card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.carousel-card .carousel-item {
+    padding: 10px;
+}
+
+.recent-title {
+    color: var(--primary-color); /* Colore per 'Recent' */
+}
+
+.projects-title {
+    color: var(--secondary-color); /* Colore per 'Projects' */
+}

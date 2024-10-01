@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="css/hero.css" />
     <!-- Section Skills-->
     <link rel="stylesheet" href="css/skills.css" />
-
+<!-- Section AboutMe-->
+<link rel="stylesheet" href="css/aboutme.css" />
+<!-- Section Carousel-->
+<link rel="stylesheet" href="css/carousel.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -66,10 +69,10 @@
           
           </h1>
           <div class="buttonBox">
-            <a href="#" class="btn btn-primary fw-bold rounded-pill"
+            <a href="#" class="btn btn-primary rounded-pill"
               >Get in Touch</a
             >
-            <a href="#" class="btn btn-outline-primary fw-bold rounded-pill"
+            <a href="#" class="btn btn-outline-primary rounded-pill"
               >Download CV</a
             >
           </div>
@@ -86,7 +89,10 @@
 
     <section class="claim-section text-center">
       <div class="container">
-        <h1 class="claim-text">Designing intuitive digital experiences<br/> that captivate and delight users</h2>
+        <h1 class="claim-text">
+          Designing <span class="intuitive">intuitive</span> digital experiences<br/>
+          that captivate and <span class="delight">delight</span> users
+        </h1>
       </div>
     </section>
 
@@ -98,7 +104,7 @@
               <h5 class="card-title mb-2">01</h5>
               <h5 class="card-subtitle mb-3 ">Web UI / UX Design</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                Designing intuitive and appealing web interfaces, focused on usability and user experience to enhance navigation.
               </p>
             </div>
           </div>
@@ -108,9 +114,9 @@
           <div class="card custom-card">
             <div class="card-body">
               <h5 class="card-title mb-2">02</h5>
-              <h5 class="card-subtitle mb-3 ">Mobile App UI / UX Design</h5>
+              <h5 class="card-subtitle mb-3 ">App UI / UX Design</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                Designing mobile apps optimized for smaller screens, ensuring a smooth and intuitive experience for users.
               </p>
             </div>
           </div>
@@ -120,9 +126,9 @@
           <div class="card custom-card">
             <div class="card-body">
               <h5 class="card-title mb-2">03</h5>
-              <h5 class="card-subtitle mb-3 ">Sottotitolo 3</h5>
+              <h5 class="card-subtitle mb-3 ">User Research</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                A process of gathering data about users to better understand their needs and improve the digital product experience.
               </p>
             </div>
           </div>
@@ -132,15 +138,140 @@
           <div class="card custom-card">
             <div class="card-body">
               <h5 class="card-title mb-2">04</h5>
-              <h5 class="card-subtitle mb-3 ">Sottotitolo 4</h5>
+              <h5 class="card-subtitle mb-3 ">Graphic Design</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                Creating effective visual elements to convey clear and engaging messages, combining images, text, and colors.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+    <div class="container mt-5 mb-5">
+      <!-- Sezione Titolo -->
+      <div class="about-title-section">
+        <h2 class="about-title">Designing solutions that blend functionality and aesthetics seamlessly</h2>
+      </div>
+      
+      <!-- Sezione Immagine e Descrizione -->
+      <div class="row about-content-section mt-4">
+        <!-- Immagine sulla sinistra -->
+        <div class="col-md-5 col-12 about-image-section mb-4">
+          <img src="./css/img/ux.png" alt="Immagine" class="about-image img-fluid">
+        </div>
+        
+        <!-- Testo sulla destra -->
+        <div class="col-md-7 col-12 about-text-section">
+          <h5 class="about-about-me">About Me - Carola Caccamo</h5>
+          <p class="about-description">I am a passionate UI/UX Designer driven by creativity and problem-solving, dedicated to improving user experiences and simplifying life through design. My skills include accessibility, user research, prototyping, wireframing, and graphic design, with a strong understanding of design principles.
+            I’ve worked in diverse fields, from lead generation in digital commerce to UX design for websites, and my background in photography has sharpened my visual aesthetics. Fluent in Italian and proficient in English, I am always eager to collaborate and deliver impactful design solutions.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="container my-5 carousel-card">
+      <h2 class="about-title text-center mb-4">
+        <span class="recent-title">Recent</span> 
+        <span class="projects-title">Projects</span>
+    </h2>
+      <div id="cardCarousel" class="carousel slide" >
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 1">
+                              <div class="card-body">
+                                  <h5 class="card-title">Titolo 1</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 1</h6>
+                                  <p class="card-text">Questa è una descrizione della prima card.</p>
+                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 2">
+                              <div class="card-body">
+                                  <h5 class="card-title">Titolo 2</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 2</h6>
+                                  <p class="card-text">Questa è una descrizione della seconda card.</p>
+                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 3">
+                              <div class="card-body">
+                                  <h5 class="card-title">Titolo 3</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 3</h6>
+                                  <p class="card-text">Questa è una descrizione della terza card.</p>
+                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Second slide -->
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 4">
+                              <div class="card-body">
+                                  <h5 class="card-title">Titolo 4</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 4</h6>
+                                  <p class="card-text">Questa è una descrizione della quarta card.</p>
+                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 5">
+                              <div class="card-body">
+                                  <h5 class="card-title">Titolo 5</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 5</h6>
+                                  <p class="card-text">Questa è una descrizione della quinta card.</p>
+                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Immagine 6">
+                              <div class="card-body">
+                                  <h5 class="card-title">Titolo 6</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Sottotitolo 6</h6>
+                                  <p class="card-text">Questa è una descrizione della sesta card.</p>
+                                  <a href="https://www.google.com" class="btn btn-primary rounded-pill">Vai al progetto</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+    
+    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

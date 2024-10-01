@@ -43,6 +43,14 @@
   font-weight: bold;
 }
 
+.intuitive {
+  color: var(--primary-color); /* Sostituisci con il colore desiderato per 'intuitive' */
+}
+
+.delight {
+  color: var(--primary-color); /* Sostituisci con il colore desiderato per 'delight' */
+}
+
 @media (max-width: 1280px) {
   .box {
     flex-direction: column-reverse;
