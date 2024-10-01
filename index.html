@@ -31,6 +31,8 @@
 <link rel="stylesheet" href="css/carousel.css" />
 <!-- Section Footer-->
 <link rel="stylesheet" href="css/footer.css" />
+<!-- Section Timeline-->
+<link rel="stylesheet" href="css/timeline.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -74,7 +76,7 @@
           
           </h1>
           <div class="buttonBox">
-            <a href="#" class="btn btn-primary rounded-pill"
+            <a href="form.html" class="btn btn-primary rounded-pill"
               >Get in Touch</a
             >
             <a href="#" class="btn btn-outline-primary rounded-pill"
@@ -387,6 +389,44 @@
   </div>
 </section>
 
+ <!--Timeline-->
+    <section class="timeline-container py-5">
+      <div class="container">
+        <h2 class="about-title text-center mb-4">
+          <span class="recent-title">Il Mio </span>
+          <span class="projects-title">Percorso</span>
+      </h2>
+        <div class="timeline">
+          <div class="timeline-item row mb-4">
+            <div class="timeline-date col-md-3 text-md-start  mb-2 mb-md-0">
+              <span>2020 - 2024</span>
+            </div>
+            <div class="timeline-content col-md-9">
+              <div class="timeline-card p-3 shadow-sm">
+                <h3 class="timeline-heading">Laurea in Informatica</h3>
+                <p class="timeline-description">Università degli Studi di XYZ - Ho acquisito competenze in programmazione, database, e sviluppo di applicazioni web.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="timeline-item row mb-4">
+            <div class="timeline-date col-md-3 text-md-start  mb-2 mb-md-0">
+              <span>2017 - 2020</span>
+            </div>
+            <div class="timeline-content col-md-9">
+              <div class="timeline-card p-3 shadow-sm">
+                <h3 class="timeline-heading">Diploma di Scuola Superiore</h3>
+                <p class="timeline-description">Liceo Scientifico - Ho approfondito le mie conoscenze matematiche e logiche, con un'attenzione particolare alla scienza e alla tecnologia.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Aggiungi altre voci del percorso formativo qui -->
+        </div>
+      </div>
+    </section>
+    
+
 
 <!--Footer-->
 <footer class="about-footer py-5">
@@ -411,23 +451,26 @@
     
     <!-- Footer Bottom Row -->
     <div class="row">
-      <div class="col-12 col-md-4 text-start">
-        <p class="about-footer-text">Portfolio.</p>
-      </div>
-      <div class="col-12 col-md-4 text-center mt-3 mt-md-0">
-        <a href="#" class="about-nav-link mx-2">Home</a>
-        <a href="#" class="about-nav-link mx-2">Servizi</a>
-        <a href="#" class="about-nav-link mx-2">Chi Siamo</a>
-      </div>
-      <div class="col-12 col-md-4 text-end mt-3 mt-md-0">
-        <a href="#" class="about-contact-link">Contact me</a>
+      <div class="col-12 d-flex justify-content-between align-items-center">
+        <div class="text-start">
+          <a   href="#"class=" about-footer-text about-nav-link">Portfolio.</a>
+        </div>
+        <div class="text-center">
+          <a href="#" class="about-nav-link mx-2">Skills</a>
+          <a href="#" class="about-nav-link mx-2">About Me</a>
+          <a href="#" class="about-nav-link mx-2">Projects</a>
+        </div>
+        <div class="text-end">
+          <a href="#" class="about-footer-text about-nav-link">Contact me</a>
+        </div>
       </div>
     </div>
+    
   </div>
 </footer>
 
 
-    
+   
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
